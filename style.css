@@ -159,6 +159,7 @@ body {
 #navbar li a:hover,
 #navbar li a.active {
     color: darkorange;
+   
 }
 
 
@@ -179,7 +180,7 @@ body {
     height: 90vh;
     width: 100%;
     background-size: cover;
-    background-position: bottom 200%;
+    background-position: 20%;
     border: none;
     padding: 0 10px 250px;
     display: flex;
@@ -190,29 +191,29 @@ body {
 }
 
 #hero h1 {
-    color: darkgoldenrod;
+    color: black;
 
 }
 
 #hero h2 {
-    color: darkgoldenrod;
+    color: black;
 }
 
 #hero h4 {
-    color: darkgoldenrod;
+    color: black;
 }
 
 
 
 #hero p {
-    color: darkgoldenrod;
+    color: black;
 }
 
 
 #hero button {
     background-image: url('/img/button.png');
     background-color: transparent;
-    color: darkgoldenrod;
+    color: black;
     border: 0;
     background-position: 50%;
     border-radius: 35%;
@@ -390,7 +391,7 @@ body {
     width: 100%;
     height: 40vh;
     background-size: 100%;
-    background-position: contain;
+    background-position: 100%;
     background-repeat: no-repeat;
 }
 
@@ -434,7 +435,7 @@ body {
 }
 
 #sm-banner h4 {
-    color: #06da10;
+    color: black;
     font-size: 30px;
     font-weight: 300;
 }
@@ -715,12 +716,20 @@ footer .copyright{
 
     }
 
-    #hero h2{
-           margin-top: 550px; 
+  
+
+    #hero h1{
+            margin-bottom: 350px;
+            margin-right: 350px;
 
 
     }
 
+    #hero p{
+        display: none; 
+
+
+    }
    #lg-bag{
               display: none; 
               color: white; 
@@ -789,119 +798,319 @@ footer .copyright{
     
 }
 
-@media (max-width:477px){
 
-    .section-p1 {
-          padding: 20px;
-    }
-    #header {
-       
-        padding: 10px 30px;
-       
-    }
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
 
-    #header .headerrr {
-               font-size: 1em;
-               display: contents;
-               
-    }
-
-    #hero {
-       
-        padding-bottom: 180px;
-        background-position: 20%;
-        
-    }
-
-    #hero p{
-       
-        padding-bottom: 5px;
-        
-    }
-
-   h1{
-      display: none;
-      
-     
-   }
-
-   h2{
-    display: none;
-
- }
-
- #hero p {
-    display: none;
 }
 
-#feature {
+
+#pagination{
+    text-align: center;    
+
+}
+
+#pagination a{
+text-decoration: none;
+background-color: #008178;  
+padding: 15px 20px;
+border-radius: 4px;
+color: white;
+font-weight: 600;
+}
+
+#pagination a i{
+font-size: 16px;
+font-weight: 600;   
+
+}
+
+/* single prodcut style  */
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+
+}
+
+
+.small-img-group{
+    display: flex;
     justify-content: space-between;
-}
-
-#feature .fe-box {
-    width: 155px;
-   
-    margin:0 0  15px 0;
-}
-  
-#product1 .pro {
-    width: 100%;
-    
-}
-
-#banner {
-    height: 40vh;
-}
-
-button.normal {
-    font-size: 10px;
-    font-weight: 600;
-    padding: 15px 30px;
-    color: #000;
-    background-color: skyblue;
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: 0.2s;
-}
-
-#banner h4{
-    margin-bottom: 80px;
-
-}
-
-#sm-banner .banner-box {
-
-    height: 60vh;
-}
-
-#sm-banner .banner-box2 {
-
     margin-top: 20px;
 }
 
-#newsletter {
-    padding:40px 20px ;
+.small-img-col{
+   flex-basis: 24%;
+   cursor: pointer;     
+}
+
+#prodetails .single-pro-detail{
+        width: 50%;
+        padding-top: 30px ;
 
 }
 
-#newsletter .form {
+#prodetails .single-pro-detail h1{
+        padding:40px  0 20px 0;
+        font-size: 12px;
+        margin-bottom: -35px;
+}
+
+#prodetails .single-pro-detail h2{
+padding:40px  0 20px 0;
+font-size: 15px;
+
+}
+
+#prodetails .single-pro-detail h4{
+padding:40px  0 20px 0;
+font-size: 16px;
+margin-bottom: -5px;
+}
+
+#prodetails .single-pro-detail select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-detail input{
+width: 50px;
+height: 47px;
+padding-left: 10px;
+font-size: 16px;
+margin-right: 10px;
+}
+
+#prodetails .single-pro-detail input:focus{
+outline: none;
+}
+
+
+
+
+#prodetails .single-pro-detail button{
+        background: #0e3742;
+        color: wheat;
+        display: flex;
+
+}
+
+#prodetails .single-pro-detail span{
+        line-height: 20px;
+        font-size: 12px;
+        margin-top: 100px;
+
+}
+
+
+
+@media (max-width:477px){
+   
+    .section-p1 {
+        padding: 20px;
+    }
+    #header {
+        
+        padding: 10px 30px;
+        
+    }
+
+    #header .headerrr {
+                font-size: 1em;
+                display: contents;
+                
+    }
+
+    #hero {
+        
+            padding-bottom: 180px;
+            background-position: 20%;
+            
+    }
+
+    #hero p{
+        
+            padding-bottom: 5px;
+            
+    }
+
+    h1{
+        display: none;
+        
+        
+    }
+
+    h2{
+        display: none;
+
+    }
+
+    #hero p {
+        display: none;
+    }
+
+    #feature {
+        justify-content: space-between;
+    }
+
+    #feature .fe-box {
+        width: 155px;
+    
+        margin:0 0  15px 0;
+    }
+    
+    #product1 .pro {
+        width: 100%;
+        
+    }
+
+    #banner {
+        height: 40vh;
+    }
+
+    button.normal {
+        font-size: 10px;
+        font-weight: 600;
+        padding: 15px 30px;
+        color: #000;
+        background-color: skyblue;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        transition: 0.2s;
+    }
+
+    #banner h4{
+        margin-bottom: 80px;
+
+    }
+
+    #sm-banner .banner-box {
+
+        height: 60vh;
+    }
+
+    #sm-banner .banner-box2 {
+
+        margin-top: 20px;
+    }
+
+    #newsletter {
+        padding:40px 20px ;
+
+    }
+
+    #newsletter .form {
+        width: 100%;
+    }
+
+  
+    #banner3 {
+            padding: 0 20px;
+
+    }
+
+    #banner3 .banner-box {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 13px;
+        margin: 0 0 8px 0;
+    }
+
+    /* Single Product */
+
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-right: 0px;
+        
+    }
+
+    #prodetails .single-pro-detail{
+        width: 100%;
+       
+
+}
+   
+    
+}
+
+
+#signupForm {
+    
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#signupForm h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#signupFormFields {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#signupFormFields label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+#signupFormFields input {
     width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
 }
 
-#banner3 {
-        padding: 0 20px;
-
+#signupFormFields button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
-#banner3 .banner-box {
-    width: 100%;
+#signupFormFields button:hover {
+    background-color: #45a049;
 }
 
+#signupForm p {
+    margin-top: 20px;
+    color: #555;
+    font-size: 14px;
 }
 
+#signupForm a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-
-
+#signupForm a:hover {
+    text-decoration: underline;
+}
 
