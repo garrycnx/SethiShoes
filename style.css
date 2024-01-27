@@ -176,7 +176,7 @@ body {
 }
 
 #hero {
-    background-image: url('/img/main.png');
+    background-image: url('./img/main.png');
     height: 90vh;
     width: 100%;
     background-size: cover;
